@@ -79,7 +79,23 @@
 
     </style>
   </head>
-  <body>
+  <body><!-- GA Tracking -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-1447038-10']);
+      _gaq.push(['_setDomainName', 'keranm.github.com/']); // Change this line per site
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    <!-- end GA Tracking -->
     <header>
         <div class="container">
           <div class="wrapper">
@@ -127,24 +143,24 @@
             <div class="span4">
               <h3>Me Online</h3>
               <ul>
-                <li><a href="http://www.twitter.com/keranm">Twitter: @keranm</a></li>
-                <li><a href="http://www.linkedin.com/in/keran">LinkedIn: keranm</a></li>
-                <li><a href="https://github.com/keranm">GitHub</a></li>
-                <li><a href="http://www.flickr.com/photos/studiowhiz">Flickr: Studiowhiz</a></li>
-                <li><a href="http://daily.keranmckenzie.com/">Blog: daily</a></li>
+                <li><a href="http://www.twitter.com/keranm" onclick="_gaq.push(['_link', 'www.twitter.com/keranm']); return false;">Twitter: @keranm</a></li>
+                <li><a href="http://www.linkedin.com/in/keran" onclick="_gaq.push(['_link', 'www.linkedin.com/in/keranm']); return false;">LinkedIn: keranm</a></li>
+                <li><a href="https://github.com/keranm" onclick="_gaq.push(['_link', 'www.github.com/keranm']); return false;">GitHub</a></li>
+                <li><a href="http://www.flickr.com/photos/studiowhiz" onclick="_gaq.push(['_link', 'www.flickr.com/photos/studiowhiz']); return false;">Flickr: Studiowhiz</a></li>
+                <li><a href="http://daily.keranmckenzie.com/" onclick="_gaq.push(['_link', 'blog.keranmckenzie.com']); return false;">Blog: daily</a></li>
               </ul>
           </div>
           <div class="span4">
               <h3>Projects</h3>
               <ul>
-                <li><a href="http://dev.localwhiz.net/">Localwhiz - local discovery</a></li>
+                <li><a href="http://dev.localwhiz.net/" onclick="_gaq.push(['_link', 'dev.localwhiz.net']); return false;">Localwhiz - local discovery</a></li>
               </ul>
           </div>
           <div class="span4">
               <h3>Keran McKenzie</h3>
               <ul>
-                <li><a href="http://www.keranmckenzie.com/">KeranMcKenzie.com</a></li>
-                <li><a href="http://www.studiowhiz.com">Studiowhiz.com</a></li>
+                <li><a href="http://www.keranmckenzie.com/" onclick="_gaq.push(['_link', 'www.keranmckenzie.com']); return false;">KeranMcKenzie.com</a></li>
+                <li><a href="http://www.studiowhiz.com" onclick="_gaq.push(['_link', 'www.studiowhi.com']); return false;">Studiowhiz.com</a></li>
               </ul>
           </div>
         </div>
